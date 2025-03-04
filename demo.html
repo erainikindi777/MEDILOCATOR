@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medilocator</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Nunito', sans-serif;
+            color: #333;
+        }
+
+        .navbar {
+            background-color: #1A2B6B;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        .navbar .logo img {
+        height: 60px; 
+        width: auto;  
+        }
+
+
+        .navbar .menu {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar .search-box {
+            display: flex;
+            align-items: center;
+            background-color: white;
+            border-radius: 20px;
+            padding: 5px 10px;
+            margin-right: 10px;
+            position: relative;
+        }
+
+        .navbar .search-box input {
+            border: none;
+            outline: none;
+            padding: 5px;
+            display: none;
+        }
+
+        .navbar .search-box i {
+            color: #1A2B6B;
+            cursor: pointer;
+        }
+
+        .navbar .search-box.active input {
+            display: block;
+        }
+
+        .navbar .appointment {
+            background-color: #3A5AFF;
+            padding: 10px 20px;
+            border-radius: 20px;
+        }
+
+        .hero iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+
+        .buttons .button {
+            background-color: #1A2B6B;
+            color: white;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            text-align: center;
+            flex: 1;
+            max-width: 200px;
+        }
+
+        .welcome {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .welcome h1 {
+            font-family: 'Playfair Display', serif;
+            color: #1A2B6B;
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            background-color: #1A2B6B;
+            color: white;
+            padding: 40px 20px;
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+            justify-content: center;
+        }
+
+        .footer .column {
+            flex: 1;
+            margin: 10px;
+            min-width: 200px;
+        }
+
+        .footer .social {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .footer .social a {
+            color: white;
+            margin: 0 10px;
+            font-size: 18px;
+        }
+
+        .footer .newsletter input {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-right: 10px;
+            width: calc(100% - 120px);
+        }
+
+        .footer .newsletter button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #3A5AFF;
+            color: white;
+            width: 100px;
+        }
+
+        @media (max-width: 768px) {
+            .navbar .menu {
+                display: none;
+            }
+
+            .buttons {
+                flex-direction: column;
+            }
+
+            .footer {
+                flex-direction: column;
+            }
+
+            .footer .newsletter input,
+            .footer .newsletter button {
+                width: 100%;
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Medilocator Logo" />
+        </div>
+        
+        <nav class="menu">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Services</a>
+            <a href="#">Hospitals</a>
+            <a href="#">News</a>
+            <a href="#">Contact</a>
+        </nav>
+        <div class="search-box">
+            <input type="text" placeholder="Search...">
+            <i class="fas fa-search"></i>
+        </div>
+        <a class="appointment" href="#">Appointment</a>
+    </header>
+    <section class="hero">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387190.27991440545!2d-74.25986768742358!3d40.69767006364264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5b0e17cb3%3A0x35e890ebe7647b3a!2sNew%20York!5e0!3m2!1sen!2sus!4v1609443725000!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+    <section class="buttons">
+        <div class="button">
+            <i class="fas fa-calendar-alt"></i>
+            Book an Appointment
+        </div>
+        <div class="button">
+            <i class="fas fa-hospital"></i>
+            Locate Hospital
+        </div>
+        <div class="button">
+            <i class="fas fa-file-medical"></i>
+            Health Records
+        </div>
+    </section>
+    <section class="welcome">
+        <h1>WELCOME TO MEDILOCATOR</h1>
+        <h2>A Great Place to Receive Care</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque placerat scelerisque tortor ornare ornare. Convallis felis vitae tortor augue.</p>
+        <a href="#">Learn More <i class="fas fa-arrow-right"></i></a>
+    </section>
+    <footer class="footer">
+        <div class="column">
+            <h3>MEDILOCATOR</h3>
+            <p>Your Path to Quick Care</p>
+            <p>© 2024 MEDILOCATOR All Rights Reserved</p>
+        </div>
+        <div class="column">
+            <h3>Important Links</h3>
+            <a href="#">Appointment</a>
+            <a href="#">Hospitals</a>
+            <a href="#">Services</a>
+            <a href="#">About Us</a>
+        </div>
+        <div class="column">
+            <h3>Connect With Us</h3>
+            <div class="social">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="column newsletter">
+            <h3>Newsletter</h3>
+            <input type="email" placeholder="Enter your email address">
+            <button>Subscribe</button>
+        </div>
+    </footer>
+</body>
+</html>

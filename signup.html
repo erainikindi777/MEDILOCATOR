@@ -1,0 +1,118 @@
+<html>
+<head>
+    <title>Medilocator Sign Up</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 400px;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .logo img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+        .logo h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+        .description {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #009688;
+            color: white;
+            font-size: 16px;
+        }
+        .form-group input::placeholder {
+            color: #b2dfdb;
+        }
+        .form-group .phone-input {
+            display: flex;
+            align-items: center;
+        }
+        .form-group .phone-input i {
+            margin-right: 10px;
+        }
+        .form-group .phone-input input {
+            flex: 1;
+        }
+        .signup-btn {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #009688;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .signup-btn:hover {
+            background-color: #00796b;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="logologin.png" alt="Medilocator logo" width="50" height="50">
+            <h1>MEDILOCATOR</h1>
+        </div>
+        <p class="description">Hello User, thank you for choosing this journey with Us lets create account first 👇</p>
+        <div class="form-group">
+            <label for="fullnames">FullNames</label>
+            <input type="text" id="fullnames" placeholder="">
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone number</label>
+            <div class="phone-input">
+                <i class="fas fa-phone"></i>
+                <input type="text" id="phone" placeholder="+91 Enter remaining numbers">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="email">Email-address</label>
+            <input type="email" id="email" placeholder="example@gmail.com">
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="**********">
+        </div>
+        <button class="signup-btn" onclick="location.href='login.html'">SignUp</button>
+    </div>
+</body>
+</html>

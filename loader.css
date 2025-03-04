@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d2d7ea;
+    font-family: Arial, sans-serif;
+}
+
+.loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100px; 
+}
+
+.loader {
+    font-size: 24px;
+    color: white;
+    white-space: nowrap;
+    animation: moveLoader 2s linear infinite;
+}
+
+@keyframes moveLoader {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
